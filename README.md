@@ -2,7 +2,7 @@
 
 >- A full-stack e-commerce web application that allows users to purchase, save, and review products.
 >- Customers may browse items via categories, or search/filter for specific items.
->- Filter by price, size, category.
+>- Filter by price, size, color, category.
 >- Search by name/title.
 >- Incorporates working shopping cart and check-out system. (Stripe/Shopify)
 >- Includes log-in/registration functionality so that users may create a wishlist of items that they want to save.
