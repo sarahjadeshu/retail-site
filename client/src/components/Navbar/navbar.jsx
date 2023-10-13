@@ -9,7 +9,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
-        <div className="left"></div>
+        <div className="left">
+          <div className="item">
+            <img src="/images/English.png" alt="Flag for English language" />
+            <KeyboardArrowDownIcon />
+          </div>
+        </div>
         <div className="center"></div>
         <div className="right"></div>
       </div>
