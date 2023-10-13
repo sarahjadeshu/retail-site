@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <img src="/images/English.png" alt="Flag for English language" />
+            <img src="/images/english.png" alt="Flag for English language" />
             <KeyboardArrowDownIcon />
           </div>
         </div>
