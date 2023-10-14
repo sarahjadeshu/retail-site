@@ -30,9 +30,31 @@ const Navbar = () => {
           </div>
         </div>
         <div className="center">
-          <Link to="/">ECHO SHOP</Link>
+          <Link to="/">SHOP ECHO</Link>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="center">
+            <Link to="/">Homepage</Link>
+          </div>
+          <div className="center">
+            <Link to="/">About</Link>
+          </div>
+          <div className="center">
+            <Link to="/">Contact</Link>
+          </div>
+          <div className="center">
+            <Link to="/">Stores</Link>
+          </div>
+          <div className="icons">
+            <SearchIcon />
+            <PersonOutlineIcon />
+            <FavoriteBorderIcon />
+            <div className="cartIcon">
+              <ShoppingCartOutlinedIcon />
+              <span>0</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
