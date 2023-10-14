@@ -1,4 +1,3 @@
-import { Children } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -9,6 +8,7 @@ import Product from "./pages/Product/product";
 import Products from "./pages/Products/products";
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
+import "./app.scss";
 
 const Layout = () => {
   return (
