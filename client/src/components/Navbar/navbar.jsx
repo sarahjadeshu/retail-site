@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import "./navbar.scss";
 
 const Navbar = () => {
   return (
@@ -33,16 +34,16 @@ const Navbar = () => {
           <Link to="/">SHOP ECHO</Link>
         </div>
         <div className="right">
-          <div className="center">
+          <div className="item">
             <Link to="/">Homepage</Link>
           </div>
-          <div className="center">
+          <div className="item">
             <Link to="/">About</Link>
           </div>
-          <div className="center">
+          <div className="item">
             <Link to="/">Contact</Link>
           </div>
-          <div className="center">
+          <div className="item">
             <Link to="/">Stores</Link>
           </div>
           <div className="icons">
