@@ -12,4 +12,4 @@
 >- Includes "share" functionality so that users can share items to others.
 >- Deploy with Render.
 
-> Technologies:  Javascript, HTML, CSS, React, Strapi, Node, Express
+> Technologies:  Javascript, HTML, CSS, Sass, React, Strapi, Node, Express
