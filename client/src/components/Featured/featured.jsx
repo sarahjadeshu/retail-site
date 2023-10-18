@@ -4,6 +4,8 @@ import "./featured.scss";
 
 const Featured = ({type}) => {
 
+    // Edit the image data, links are currently not being displayed
+
     const data = [
       {
         id: 1,
@@ -16,7 +18,7 @@ const Featured = ({type}) => {
       },
       {
         id: 2,
-        img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        img: "https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "Coat",
         isNew: true,
         oldPrice: 19,
