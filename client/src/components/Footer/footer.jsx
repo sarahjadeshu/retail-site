@@ -24,21 +24,28 @@ const Footer = () => {
         <div className="item">
           <h1>About</h1>
           <span>
-            Handmade jewelry and accessories. Crafted with care and love in
-            California.
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
+            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
+            ut labore etdolore.
           </span>
         </div>
         <div className="item">
           <h1>Contact</h1>
           <span>
-            Questions? Feel free to email us at ohhecksarah@gmail.com.
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
+            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
+            ut labore etdolore.
           </span>
         </div>
       </div>
       <div className="bottom">
         <div className="left">
           <span className="logo">OH HECK SHOP</span>
-          <span className="copyright">© Copyright 2023. All Rights Reserved</span>
+          <span className="copyright">
+            © Copyright 2023. All Rights Reserved
+          </span>
         </div>
         <div className="right">
           <img src="/images/payment.png" alt="Payment information" />

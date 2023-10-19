@@ -7,8 +7,8 @@ const Card = ({item}) => {
         <Link className="link" to={`/product/${item.id}`}>
             <div className="card">
                 <div className="image">
-                    <img src="{item.img}" alt="Image of product" className="mainImg" />
-                    <img src="{item.img2}" alt="Image of product after hover" className="secondImg" />
+                    <img src="{item.img}" alt="" className="mainImg" />
+                    <img src="{item.img2}" alt="" className="secondImg" />
                 </div>
                 <h2>{item.title}</h2>
                 <div className="prices">
