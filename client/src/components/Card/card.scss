@@ -26,5 +26,40 @@
         .mainImg {
             z-index: 1;
         }
+
+        span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: white;
+            color: teal;
+            padding: 3px 5px;
+            z-index: 3;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: Verdana;
+        }
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Verdana;
+    }
+
+    .prices {
+        display: flex;
+        gap: 20px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: Verdana;
+
+            &:first-child {
+                color: gray;
+                text-decoration: line-through;
+            }
+        }
     }
 }
