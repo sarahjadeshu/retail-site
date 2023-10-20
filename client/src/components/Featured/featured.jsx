@@ -4,8 +4,6 @@ import "./featured.scss";
 
 const Featured = ({type}) => {
 
-    // Edit the image data, links are currently not being displayed
-
     const data = [
       {
         id: 1,
