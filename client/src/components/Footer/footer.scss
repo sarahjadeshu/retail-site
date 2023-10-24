@@ -16,11 +16,13 @@
             h1 {
                 font-size: 18px;
                 font-weight: 500;
+                font-family: Verdana;
                 color: #555;
             }
 
             span {
                 color: gray;
+                font-family: Verdana;
             }
         }
     }
@@ -36,15 +38,17 @@
             align-items: center;
 
             .logo {
-                color: #2879fe;
+                color: #ff9f60;
                 font-weight: bold;
                 font-size: 24px;
+                font-family: Verdana;
             }
 
             .copyright {
                 margin-left: 20px;
                 font-size: 12px;
                 color: gray;
+                font-family: Verdana;
             }
         }
 

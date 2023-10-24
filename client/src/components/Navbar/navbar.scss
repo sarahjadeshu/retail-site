@@ -12,6 +12,7 @@
             align-items: center;
             font-size: 18px;
             font-family: Verdana;
+            color: rgb(255, 171, 171);
         }
 
         .left {
@@ -22,6 +23,7 @@
         .center {
             font-size: 30px;
             font-family: Verdana;
+            color: rgb(255, 154, 114);
             letter-spacing: 2px;
         }
         .right {
@@ -32,7 +34,7 @@
             .icons {
                 display: flex;
                 gap: 15px;
-                color: #777;
+                color: rgb(255, 154, 114);
                 cursor: pointer;
 
                 .cartIcon {
@@ -43,7 +45,7 @@
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
-                        background-color: #2879fe;
+                        background-color: #70c978;
                         color: white;
                         position: absolute;
                         right: -10px;
