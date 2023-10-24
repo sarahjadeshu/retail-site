@@ -32,18 +32,35 @@ const [sort, setSort] = useState(null);
           <h2>Filter By Price</h2>
           <div className="inputItem">
             <span>0</span>
-            <input type="range" min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
+            <input
+              type="range"
+              min={0}
+              max={1000}
+              onChange={(e) => setMaxPrice(e.target.value)}
+            />
             <span>{maxPrice}</span>
           </div>
         </div>
         <div className="filterItem">
           <h2>Sort By</h2>
           <div className="inputItem">
-            <input type="radio" id="asc" value="asc" name="price" onChange={e => setSort("asc")}/>
+            <input
+              type="radio"
+              id="asc"
+              value="asc"
+              name="price"
+              onChange={(e) => setSort("asc")}
+            />
             <label htmlFor="asc">Price (Low to high)</label>
           </div>
           <div className="inputItem">
-            <input type="radio" id="desc" value="desc" name="price" onChange={e => setSort("desc")}/>
+            <input
+              type="radio"
+              id="desc"
+              value="desc"
+              name="price"
+              onChange={(e) => setSort("desc")}
+            />
             <label htmlFor="desc">Price (High to low)</label>
           </div>
         </div>
@@ -51,8 +68,8 @@ const [sort, setSort] = useState(null);
       <div className="right">
         <img
           className="catImg"
-          src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt="Person sitting on stone bench, looking towards the ocean and a lighthouse"
+          src="https://images.pexels.com/photos/11629784/pexels-photo-11629784.jpeg"
+          alt="Orange wild flowers against white background"
         />
         <List catId={catId} maxPrice={maxPrice} sort={sort} />
       </div>
