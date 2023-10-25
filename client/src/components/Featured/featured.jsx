@@ -42,7 +42,6 @@ const Featured = ({type}) => {
         <div className="featured">
             <div className="top">
                 <h1>{type} Products</h1>
-                <p>New arrivals and popular picks!</p>
             </div>
             <div className="bottom">
                 {data.map(item => (
