@@ -4,7 +4,7 @@
 >- Customers may browse items via categories, or search/filter for specific items.
 >- Filter by price, size, color, category.
 >- Sort by price.
->- Search by name/title.
+>- Search by name/title. (Optional)
 >- Incorporates working shopping cart and check-out system. (Stripe)
 >- Incorporates Strapi headless CMS for data management.
 >- Deploy.
