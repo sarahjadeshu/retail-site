@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
-import "./featured.scss";
+import "./Featured.scss";
 
 const Featured = ({type}) => {
 

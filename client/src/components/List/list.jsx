@@ -1,5 +1,5 @@
 import React from "react";
-import "./list.scss";
+import "./List.scss";
 import Card from "../Card/Card"
 
 const List = () => {
