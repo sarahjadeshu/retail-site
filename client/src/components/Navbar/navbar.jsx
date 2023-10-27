@@ -7,7 +7,7 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import "./navbar.scss";
-import Cart from "../Cart/cart";
+import Cart from "../Cart/Cart";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

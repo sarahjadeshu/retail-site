@@ -1,6 +1,6 @@
 import React from "react";
 import "./list.scss";
-import Card from "../Card/card"
+import Card from "../Card/Card"
 
 const List = () => {
 

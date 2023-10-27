@@ -1,8 +1,8 @@
 import React from "react";
-import Slider from "../../components/Slider/slider";
-import Featured from "../../components/Featured/featured";
-import Categories from "../../components/Categories/categories";
-import Contact from "../../components/Contact/contact";
+import Slider from "../../components/Slider/Slider";
+import Featured from "../../components/Featured/Featured";
+import Categories from "../../components/Categories/Categories";
+import Contact from "../../components/Contact/Contact";
 import "./home.scss"
 
 const Home = () => {
