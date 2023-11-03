@@ -12,7 +12,7 @@ const Featured = ({ type }) => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          process.env.REACT_APP_API_URL + "/products",
+          process.env.REACT_APP_API_URL + "/products?populate=*",
           {
             headers: {
               Authorization: "bearer" + process.env.REACT_APP_API_TOKEN,
