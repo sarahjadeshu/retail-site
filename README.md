@@ -10,4 +10,4 @@
 >- Incorporates Strapi headless CMS for data management.
 >- Deploy.
 
-> Technologies:  JavaScript, HTML, CSS, Sass, React, Strapi, Node, Express
+> Technologies:  JavaScript, HTML, CSS, SASS, React, Strapi, Node.js, Express
