@@ -7,7 +7,7 @@
 >- Sort by price.
 >- Search by name/title. (Optional)
 >- Incorporates working shopping cart and check-out system. (Stripe)
->- Incorporates Strapi headless CMS for data management.
+>- Incorporates Strapi headless CMS for API and data management.
 >- Deploy.
 
 > Technologies:  JavaScript, HTML, CSS, SASS, React, Strapi, Node.js, Express
