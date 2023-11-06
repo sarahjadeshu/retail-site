@@ -7,7 +7,7 @@
 >- Filter by price, size, color, category.
 >- Sort by price.
 >- Search by name/title. (Optional)
->- Incorporates working shopping cart and check-out system. (Stripe)
+>- Incorporates working shopping cart and check-out system with Stripe.
 >- Incorporates Strapi headless CMS for API and data management.
 >- Deploy.
 
