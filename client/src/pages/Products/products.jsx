@@ -17,18 +17,12 @@ const {data, loading, error} = useFetch(`/sub-categories?[filters][categories][i
       <div className="left">
         <div className="filterItem">
           <h2>Product Categories</h2>
-          <div className="inputItem">
-            <input type="checkbox" id="1" value={1} />
-            <label htmlFor="1">Shoes</label>
-          </div>
-          <div className="inputItem">
-            <input type="checkbox" id="2" value={2} />
-            <label htmlFor="2">Skirts</label>
-          </div>
-          <div className="inputItem">
-            <input type="checkbox" id="3" value={3} />
-            <label htmlFor="3">Coats</label>
-          </div>
+          {data?.map((item) => (
+            <div className="inputItem" key={item.id}>
+              <input type="checkbox" id={item.id} value={item.id} />
+              <label htmlFor={item.id}>{item.attributes.title}</label>
+            </div>
+          ))}
         </div>
         <div className="filterItem">
           <h2>Filter By Price</h2>
