@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import List from "../../components/List/List";
+import useFetch from "../../hooks/useFetch";
 import "./products.scss";
 
 const Products = () => {
@@ -75,7 +76,7 @@ const handleChange = (event) => {
           src="https://images.pexels.com/photos/11629784/pexels-photo-11629784.jpeg"
           alt="Orange wild flowers against white background"
         />
-        <List catId={catId} maxPrice={maxPrice} sort={sort} />
+        <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />
       </div>
     </div>
   );
