@@ -1,6 +1,6 @@
 # E-commerce Site
 
->- A full-stack e-commerce web application that allows users to purchase, save, and review products.
+>- A full-stack e-commerce web application that allows users to browse and purchase products.
 >- Customers may browse items via categories, or search/filter for specific items.
 >- Categories are displayed on home page using grid system.
 >- Featured section on home page displays new arrivals and trending items.
