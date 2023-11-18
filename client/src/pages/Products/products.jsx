@@ -18,7 +18,7 @@ const handleChange = (event) => {
   const value = event.target.value;
   const isChecked = event.target.checked;
 
-  setSelectedSubCats(isChecked ? [...selectedSubCats, value] : selectedSubCats.filter(item => item !== value))
+  setSelectedSubCats(isChecked ? [...selectedSubCats, value] : selectedSubCats.filter((item) => item !== value))
 }
 
   return (
