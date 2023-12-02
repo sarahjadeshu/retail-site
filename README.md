@@ -6,7 +6,6 @@
 >- Featured section on home page displays new arrivals and trending items.
 >- Products can be filtered by category and/or price.
 >- Sort by price.
->- Search by name/title. (Optional)
 >- Incorporates working shopping cart and check-out system with Stripe.
 >- Incorporates Strapi headless CMS for API and data management.
 >- Deploy.
