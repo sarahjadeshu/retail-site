@@ -1,4 +1,4 @@
-# E-commerce Site
+# E-commerce Web Application
 
 >- A full-stack e-commerce web application that allows users to browse through and purchase products.
 >- Customers may browse items via categories, or search/filter for specific items.
