@@ -9,7 +9,7 @@ const Categories = () => {
           <div className="row">
             <img
               src="https://images.pexels.com/photos/1858488/pexels-photo-1858488.jpeg"
-              alt="Person wearing yellow coat holding pink flower"
+              alt="Person wearing yellow coat and holding pink flower"
             />
             <button>
               <Link className="link" to="/products/1">
@@ -20,7 +20,7 @@ const Categories = () => {
           <div className="row">
             <img
               src="https://images.pexels.com/photos/3328128/pexels-photo-3328128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Khaki robe and brown plaid pants"
+              alt="Khaki robe with brown plaid pants"
             />
             <button>
               <Link className="link" to="/products/1">

@@ -5,6 +5,8 @@ import List from "../../components/List/List";
 import useFetch from "../../hooks/useFetch";
 import "./products.scss";
 
+// Not displaying products at times (when filtering), need to fix
+
 const Products = () => {
 
 const catId = parseInt(useParams().id);
