@@ -4,7 +4,7 @@
 >- Customers may browse items via categories, or search/filter for specific items.
 >- Featured section on home page displays new arrivals and trending items.
 >- Products can be filtered by category and/or price.
->- Sort by price.
+>- Products can be sorted by price.
 >- Incorporates working shopping cart and check-out system with Stripe.
 >- Incorporates Strapi headless CMS for API and data management.
 >- Deploy.
