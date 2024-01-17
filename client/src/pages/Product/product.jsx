@@ -6,7 +6,6 @@ import { addToCart } from "../../redux/cartReducer";
 import "./product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import BalanceIcon from "@mui/icons-material/Balance";
 import useFetch from "../../hooks/useFetch";
 
 const Product = () => {
@@ -84,9 +83,6 @@ const Product = () => {
             <div className="links">
               <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
-              </div>
-              <div className="item">
-                <BalanceIcon /> ADD TO COMPARE
               </div>
             </div>
           </div>
