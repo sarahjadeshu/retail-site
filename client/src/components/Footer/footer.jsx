@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="left">
           <span className="logo">OH HECK SHOP</span>
           <span className="copyright">
-            © Copyright 2023. All Rights Reserved
+            © Copyright 2024. All Rights Reserved
           </span>
         </div>
         <div className="right">
