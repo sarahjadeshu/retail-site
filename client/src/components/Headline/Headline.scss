@@ -1,0 +1,21 @@
+.headline {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    color: white;
+    padding: 15px;
+
+    .wrapper {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 13px;
+            font-family: Verdana;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+}
