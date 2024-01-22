@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -23,27 +24,31 @@ const Navbar = () => {
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
-            <span>USD</span>
-            <KeyboardArrowDownIcon />
+            <Link className="link" to="/products/1">
+              Women
+            </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/products/1">Women</Link>
+            <Link className="link" to="/products/2">
+              Men
+            </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/products/2">Men</Link>
+            <Link className="link" to="/">
+              About
+            </Link>
           </div>
         </div>
         <div className="center">
-          <Link className="link" to="/">OH HECK SHOP</Link>
+          <Link className="link" to="/">
+            OH HECK SHOP
+          </Link>
         </div>
         <div className="right">
-          <div className="item">
-            <Link className="link" to="/">Home</Link>
-          </div>
-          <div className="item">
-            <Link className="link" to="/">About</Link>
-          </div>
           <div className="icons">
+            <Link className="link" to="/">
+              <HomeOutlinedIcon />
+            </Link>
             <SearchIcon />
             <PersonOutlineIcon />
             <FavoriteBorderIcon />

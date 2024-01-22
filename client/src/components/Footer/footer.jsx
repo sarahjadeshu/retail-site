@@ -15,11 +15,11 @@ const Footer = () => {
         </div>
         <div className="item">
           <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
+          <span>Shipping & Orders</span>
+          <span>Return Policy</span>
           <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
+          <span>FAQ</span>
+          <span>Terms of Service</span>
         </div>
         <div className="item">
           <h1>About</h1>
