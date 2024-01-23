@@ -1,17 +1,28 @@
 .about {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 25px;
 
-    .title {
+    .content {
         text-align: center;
-        font-size: 14px;
-        color: gray;
+        font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 3px;
 
+        h1 {
+            color: rgb(150, 150, 150);
+        }
+
         img {
             width: 800px;
+        }
+
+        p {
+            max-width: 800px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: rgb(161, 161, 161);
         }
     }
 }

@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       <div className="bottom">
         <div className="left">
-          <span className="logo">OH HECK SHOP</span>
+          <span className="logo">TANGERINE</span>
           <span className="copyright">
             © Copyright 2024. All Rights Reserved
           </span>
