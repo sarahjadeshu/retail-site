@@ -14,7 +14,7 @@ const About = () => {
             little things are the biggest sources of inspiration; a quiet picnic 
             for one on a warm autumn day.
           </p>
-          <video src="/videos/about-video.mp4" width="800" height="450" controls="controls" />
+          <video src="/videos/about-video.mp4" width="800" height="450" controls="controls" autoplay="false" />
         </div>
       </div>
     );
