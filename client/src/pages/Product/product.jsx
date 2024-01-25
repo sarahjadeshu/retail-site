@@ -6,6 +6,8 @@ import { addToCart } from "../../redux/cartReducer";
 import "./product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
+import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import useFetch from "../../hooks/useFetch";
 
 const Product = () => {
@@ -83,6 +85,14 @@ const Product = () => {
             <div className="links">
               <div className="item">
                 <FavoriteBorderIcon /> ADD TO WISH LIST
+              </div>
+            </div>
+            <div className="details">
+              <div className="item">
+                <LocalShippingOutlinedIcon /> Ships in 1-3 business days
+              </div>
+              <div className="item">
+                <StorefrontOutlinedIcon /> Available in-store
               </div>
             </div>
           </div>

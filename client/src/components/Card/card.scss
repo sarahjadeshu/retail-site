@@ -45,17 +45,23 @@
     h2 {
         font-size: 16px;
         font-weight: 400;
-        font-family: Verdana;
+        font-family: Arial;
+        letter-spacing: 2px;
+    }
+
+    h2:hover {
+        font-style: italic;
+        color: rgb(255, 154, 114);
     }
 
     .prices {
         display: flex;
-        gap: 20px;
+        gap: 18px;
 
         h3 {
             font-size: 18px;
             font-weight: 500;
-            font-family: Verdana;
+            font-family: Arial;
 
             &:first-child {
                 color: gray;

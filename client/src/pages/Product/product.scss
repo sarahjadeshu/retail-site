@@ -1,5 +1,5 @@
 .product {
-    padding: 20px 50px;
+    padding: 50px 200px;
     display: flex;
     gap: 50px;
 
@@ -36,11 +36,13 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        font-family: Verdana;
+        font-family: Arial;
 
         h1 {
-            color: rgb(170, 228, 173);
-            font-size: 32px;
+            color: rgb(90, 90, 90);
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .price {
@@ -54,6 +56,7 @@
             font-weight: 300;
             text-align: justify;
             color: rgb(201, 201, 201);
+            letter-spacing: 1px;
         }
 
         .quantity {
@@ -62,8 +65,8 @@
             gap: 10px;
 
             button {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -73,7 +76,7 @@
         }
 
         .add {
-            width: 250px;
+            width: 350px;
             padding: 10px;
             background-color: rgb(255, 173, 119);
             color: white;
@@ -84,6 +87,12 @@
             cursor: pointer;
             border: none;
             font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .add:hover {
+            background-color: pink;
         }
 
         .links {
@@ -95,7 +104,21 @@
                 align-items: center;
                 gap: 10px;
                 color: rgb(255, 152, 152);
-                font-size: 14px;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .details {
+            gap: 20px;
+            padding-top: 10px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: rgb(90, 90, 90);
+                padding-top: 5px;
             }
         }
     }
