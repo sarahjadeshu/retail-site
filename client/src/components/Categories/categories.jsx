@@ -51,7 +51,7 @@ const Categories = () => {
                   alt="Man standing in long grass wearing black and white contrast blazer coat"
                 />
                 <button>
-                  <Link className="link" to="/products/1">
+                  <Link className="link" to="/products/2">
                     Men
                   </Link>
                 </button>
