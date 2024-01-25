@@ -11,6 +11,7 @@ const List = ({ subCats, maxPrice, sort, catId }) => {
         )}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
     );
 
+
     return (
         <div className="list">{loading ? "loading" : data?.map((item) => 
             <Card item={item} key={item.id} />
