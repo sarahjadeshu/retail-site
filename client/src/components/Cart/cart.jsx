@@ -4,6 +4,8 @@ import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import "./Cart.scss";
 import { removeItem } from "../../redux/cartReducer";
 import { resetCart } from "../../redux/cartReducer";
+import { makeRequest } from "../../makeRequest";
+import { loadStripe } from '@stripe/stripe-js';
 
 const Cart = () => {
   const products = useSelector(state => state.cart.products)
@@ -13,11 +15,21 @@ const Cart = () => {
     let total = 0;
     products.forEach((item) => (total += item.quantity * item.price));
     return total.toFixed(2);
-  }
+  };
+
+  const stripePromise = loadStripe("pk_live_o5ueOzQ7sltumktjyiLD02Iw");
 
   const handlePayment = async () => {
     try {
+      const stripe = await stripePromise;
 
+      const res = await makeRequest.post("/orders", {
+        products
+      });
+
+      await stripe.redirectToCheckout({
+        sessionId: res.data.stripeSession.id,
+      });
     } catch (err) {
       console.log(err);
     }
