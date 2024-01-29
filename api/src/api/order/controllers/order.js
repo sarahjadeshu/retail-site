@@ -8,7 +8,7 @@ const stripe = require("stripe")(process.env.STRIPE_KEY);
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController("api::order.order", ({strapi}) => ({
+module.exports = createCoreController("api::order.order", ({ strapi }) => ({
     async create(ctx){
         const { products } = ctx.request.body;
 
@@ -26,7 +26,7 @@ module.exports = createCoreController("api::order.order", ({strapi}) => ({
                         },
                         unit_amount: item.price*100,
                     },
-                    quantity: item.quantity,
+                    quantity: product.quantity,
                 };
             })
         );
@@ -34,8 +34,8 @@ module.exports = createCoreController("api::order.order", ({strapi}) => ({
         try {
             const session = await stripe.checkout.sessions.create({
               mode: "payment",
-              success_url: `${process.env.CLIENT_URL}?success=true`,
-              cancel_url: `${process.env.CLIENT_URL}?success=false`,
+              success_url: process.env.CLIENT_URL+"?success=true",
+              cancel_url: process.env.CLIENT_URL+"?success=false",
               line_items: lineItems,
               shipping_address_collection: {allowed_countries:["US", "CA"]}.allowed_countries,
               payment_method_types: ["card"],

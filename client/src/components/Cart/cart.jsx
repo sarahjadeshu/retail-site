@@ -8,7 +8,7 @@ import { makeRequest } from "../../makeRequest";
 import { loadStripe } from '@stripe/stripe-js';
 
 const Cart = () => {
-  const products = useSelector(state => state.cart.products)
+  const products = useSelector((state) => state.cart.products);
   const dispatch = useDispatch();
 
   const totalPrice = () => {
