@@ -2,6 +2,7 @@
 
 >- A full-stack e-commerce web application that allows users to browse through and purchase products.
 >- Customers may browse items via categories, or search/filter for specific items.
+>- Items can be added to favorites.
 >- Featured section on home page displays new arrivals and trending items.
 >- Products can be filtered by category and/or price.
 >- Products can be sorted by price.
