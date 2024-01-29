@@ -9,9 +9,10 @@ const stripe = require("stripe")(process.env.STRIPE_KEY);
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
-    async create(ctx){
+    async create(ctx) {
         const { products } = ctx.request.body;
 
+        try {
         const lineItems = await Promise.all(
             products.map(async (product) => {
                 const item = await strapi
@@ -24,24 +25,23 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
                         product_data: {
                             name: item.title
                         },
-                        unit_amount: item.price*100,
+                        unit_amount: Math.round(item.price*100),
                     },
                     quantity: product.quantity,
                 };
             })
         );
 
-        try {
             const session = await stripe.checkout.sessions.create({
-              mode: "payment",
-              success_url: process.env.CLIENT_URL+"?success=true",
-              cancel_url: process.env.CLIENT_URL+"?success=false",
-              line_items: lineItems,
-              shipping_address_collection: {allowed_countries:["US", "CA"]}.allowed_countries,
+              shipping_address_collection: { allowed_countries: ["US", "CA"] },
               payment_method_types: ["card"],
+              mode: "payment",
+              success_url: process.env.CLIENT_URL + "?success=true",
+              cancel_url: process.env.CLIENT_URL + "?success=false",
+              line_items: lineItems,
             });
 
-            await strapi.service("api::order.order").create({ data:{
+            await strapi.service("api::order.order").create({ data: {
                 products,
                 stripeId: session.id,
             }});
@@ -50,7 +50,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
 
         } catch(err) {
             ctx.response.status = 500;
-            return err;
+            return { err };
         }
     }
 }));
