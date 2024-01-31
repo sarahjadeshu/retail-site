@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Headline from "./components/Headline/Headline";
+import Favorites from "./pages/Favorites/Favorites";
 import "./app.scss";
 
 const Layout = () => {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/favorites",
+        element: <Favorites />,
       },
     ],
   },

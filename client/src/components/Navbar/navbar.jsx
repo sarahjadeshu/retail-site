@@ -20,7 +20,11 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <img src="/images/english.png" width="25" alt="Flag for English language" />
+            <img
+              src="/images/english.png"
+              width="25"
+              alt="Flag for English language"
+            />
             <KeyboardArrowDownIcon className="arrowIcon" />
           </div>
           <div className="item">
@@ -51,7 +55,9 @@ const Navbar = () => {
             </Link>
             <SearchIcon />
             <PersonOutlineIcon />
-            <FavoriteBorderIcon />
+            <Link className="link" to="/favorites">
+              <FavoriteBorderIcon />
+            </Link>
             <div className="cartIcon" onClick={() => setOpen(!open)}>
               <ShoppingCartOutlinedIcon />
               <span>{products.length}</span>

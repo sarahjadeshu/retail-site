@@ -1,0 +1,16 @@
+.favorites {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
+    .title {
+        text-align: center;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+        h1 {
+            color: rgb(150, 150, 150);
+        }
+    }
+}
