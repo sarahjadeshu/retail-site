@@ -16,6 +16,15 @@ const Product = () => {
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantity, setQuantity] = useState(1);
 
+  // Move wishlist array to App.js 
+  const wishlist = [];
+
+  // Add to wishlist handler
+  const addToWishlist = () => {
+    wishlist.push(data);
+    console.log(wishlist);
+  }
+
   const dispatch = useDispatch();
 
   const { data, loading, error } = useFetch(
@@ -50,8 +59,8 @@ const Product = () => {
             <div className="mainImg">
               <img
                 src={
-                  process.env.REACT_APP_UPLOAD_URL +data?.attributes[selectedImg]
-                    .data?.attributes?.url
+                  process.env.REACT_APP_UPLOAD_URL +
+                  data?.attributes[selectedImg].data?.attributes?.url
                 }
                 alt=""
               />
@@ -72,19 +81,29 @@ const Product = () => {
               {quantity}
               <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
             </div>
-            <button className="add" onClick={() => dispatch(addToCart({
-              id: data.id,
-              title: data.attributes.title,
-              desc: data.attributes.desc,
-              price: data.attributes.price,
-              img: data.attributes.img.data.attributes.url,
-              quantity,
-            }))}>
+            <button
+              className="add"
+              onClick={() =>
+                dispatch(
+                  addToCart({
+                    id: data.id,
+                    title: data.attributes.title,
+                    desc: data.attributes.desc,
+                    price: data.attributes.price,
+                    img: data.attributes.img.data.attributes.url,
+                    quantity,
+                  })
+                )
+              }
+            >
               <AddShoppingCartIcon /> ADD TO CART
             </button>
             <div className="links">
               <div className="item">
-                <FavoriteBorderIcon /> ADD TO WISH LIST
+                <button onClick={addToWishlist} >
+                  <FavoriteBorderIcon /> ADD TO WISH
+                  LIST
+                </button>
               </div>
             </div>
             <div className="details">
