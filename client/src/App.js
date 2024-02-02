@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -54,6 +55,9 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  // Array that stores favorites for wishlist
+  const [favoriteProducts, setFavoriteProducts] = useState([]);
+
   return (
   <div>
     <RouterProvider router={router} />
